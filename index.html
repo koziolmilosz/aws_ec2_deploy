@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Server Online 🚀</title>
+  <style>
+    /* === Base Reset === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at top, #0a0a0a, #000);
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+      background: linear-gradient(90deg, #00ffcc, #0077ff, #ff00cc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: hueShift 5s infinite linear;
+    }
+
+    @keyframes hueShift {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+
+    .status {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      color: #aaa;
+      letter-spacing: 1px;
+    }
+
+    .pulse {
+      width: 15px;
+      height: 15px;
+      background: #00ffcc;
+      border-radius: 50%;
+      margin-right: 10px;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.3); opacity: 0.6; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .status-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #555;
+      letter-spacing: 0.5px;
+    }
+
+    footer a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Server Is Live</h1>
+  <div class="status-container">
+    <div class="pulse"></div>
+    <div class="status">Status: <strong>Online</strong></div>
+  </div>
+  <footer>
+    Powered by <a href="#">YourServer</a> 🚀
+  </footer>
+</body>
+</html>
